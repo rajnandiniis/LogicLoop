@@ -1,14 +1,15 @@
 
 import asyncio
 
-
 from agents.workflow.state import State
 from agents.workflow.graph import OrchestratorNode, coder
 
 async def main():
     state = State()
+
+    directory = "D:/Study/logic-loop/agents/developer"
     
-    async with coder.iter(OrchestratorNode("checkout the content of pyproject.toml"), state=state) as run:  
+    async with coder.iter(OrchestratorNode(f"get the list of files from -> {directory}"), state=state) as run:  
         async for node in run:  
             print('Node:', node)
           

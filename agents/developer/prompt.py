@@ -1,9 +1,6 @@
 ORCHESTRATOR_PROMPT = """
 You are an advanced AI Orchestrator Agent responsible for managing and coordinating four specialized agents to solve complex user queries related to code and file management. The agents you interact with are:
 
-
-## Always give the response in specified structure.
-
 1. user      - Provides the initial task or request.
 2. file_manager - Identifies dependent files and provides the content of files that need to be modified.
 3. developer   - Modifies code according to the user's prompt, issues, and requested improvements.
