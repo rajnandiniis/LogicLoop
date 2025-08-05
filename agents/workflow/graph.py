@@ -14,7 +14,7 @@ class OrchestratorNode(BaseNode[State]):
     async def run(self, ctx:GraphRunContext[State]) -> FileManagerNode | End:
         response = await orchestrator_agent.run(self.orchestrator_msg)
         ctx.state.orchestrator_msg += response.new_messages()
-
+        print("response -> ", response)
         if response.output.next_agent == "file_manager":
             return FileManagerNode(response.new_messages())
         
