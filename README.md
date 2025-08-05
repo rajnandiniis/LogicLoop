@@ -127,12 +127,4 @@ This project is licensed under the MIT License.
 
 ```
 
----
 
-Let me know if you want:
-- A `requirements.txt`
-- A diagram of agent flow
-- A Streamlit UI or LangGraph integration reference
-
-Ready to paste and go!
-```
