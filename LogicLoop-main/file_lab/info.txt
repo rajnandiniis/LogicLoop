@@ -1,0 +1,3 @@
+Hello, this is a sample document.
+It will be used to demonstrate read, write, edit, and delete operations.
+Feel free to experiment.
